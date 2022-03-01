@@ -1,0 +1,427 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*eventos*/
+.grillaeventos{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "eventos1" 
+                             "eventos2";
+        
+        align-content: space-around;
+        justify-content: space-between;     
+        align-items: center;
+        justify-items: center;
+        gap: 1%;
+}
+
+.contenedoreventos1{
+    grid-area: eventos1;
+}
+
+.contenedoreventos2{
+    grid-area: eventos2;
+}
+
+
+/*actividades */
+.grillaact{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "foto1" 
+                             "foto2" 
+                             "foto3";
+                             
+        align-content: space-around;
+        justify-content: space-between;     
+        align-items: center;
+        justify-items: center;
+        
+
+}  
+
+.contenedoract1{
+    grid-area: foto1;
+    height: 80%;
+    width: 80%;
+}
+
+.contenedoract2{
+    grid-area: foto2;
+    height: 80%;
+    width: 80%;
+}
+
+.contenedoract3{
+    grid-area: foto3;
+    height: 80%;
+    width: 80%;
+}
+    
+
+/*galeria*/
+.grillagaleria{
+    
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto1 foto2 foto3"
+                         "foto4 foto5 foto6";                          
+    align-content: space-around;
+    justify-content: space-between;
+    column-gap: 2%;
+        align-items: center;
+        justify-items: center;
+}
+
+.contenedorgaleria1{
+    height: 80%;
+    width: 80%;
+    grid-area: foto1;
+    
+}
+.contenedorgaleria2{
+    height: 80%;
+    width: 80%;
+    grid-area: foto2;
+}
+.contenedorgaleria3{
+    height: 80%;
+    width: 80%;
+    grid-area: foto3;
+}
+.contenedorgaleria4{
+    height: 80%;
+    width: 80%;
+    grid-area: foto4;
+}
+.contenedorgaleria5{
+    height: 80%;
+    width: 80%;
+    grid-area: foto5;
+}
+.contenedorgaleria6{
+    height: 80%;
+    width: 80%;
+    grid-area: foto6;
+}
+
+/*index*/
+.grillaindex{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "foto1 foto2 foto3"
+                             "foto4 foto5 foto6";
+        align-content: space-around;
+        justify-content: space-between;     
+        gap: 2%;
+        margin: 1rem 0;
+        
+
+}
+
+    
+
+.contenedor1{
+    
+    grid-area: foto1;
+    
+}
+
+.contenedor2{
+    
+    grid-area: foto2;   
+}
+
+.contenedor3{
+    
+    grid-area: foto3;
+}
+
+.contenedor4{
+
+    grid-area: foto4;
+}
+
+.contenedor5{
+   
+    grid-area: foto5;
+}
+
+.contenedor6{
+    grid-area: foto6;
+}
+
+
+
+/*HEADER*/
+header{
+    
+    background-image: url("../img/header3.webp");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+ 
+}
+
+#grantitulo{
+    font-weight:800;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+/*NAV*/
+nav{
+    background-color: green
+   
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+li{
+    font-size: 15px;
+}   
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/*MAIN*/
+main{
+    background-color: black;
+    padding: 1rem;
+
+    
+
+    
+}
+
+h2{
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    color: rgb(219, 219, 219);
+   
+}
+
+p{ 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    
+    
+    
+
+}
+.formulario p {
+
+    text-align: center;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formulario form input, textarea {
+
+    width: 70%;
+    border-radius: 5px;
+    margin: 0.5rem; 
+    padding: 0.5rem;
+
+
+
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    height: 100px;
+    align-items: center;
+
+   
+
+}
+footer div {
+    display: flex;
+    padding: 1rem;
+
+}
+
+footer div .imgredsocial{
+    width: 30px;
+    padding: 0 1rem;
+
+}
+
+
+.piedepagina{
+    text-align: center;
+    
+}
+
+@media only screen and (max-width:600px) {
+
+    #grantitulo {
+        font-size: 50px;
+    }
+    
+    nav ul {
+        flex-direction: column; 
+        align-items: center;       
+    }
+
+    nav ul li {
+        padding: 0.3rem 0;
+    }
+    /*mobile galeria*/  
+
+    .grillagaleria{
+
+       grid-template-columns: 100%;
+       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+       grid-template-areas: "foto1"
+                            "foto2"
+                            "foto3"   
+                            "foto4"   
+                            "foto5"   
+                            "foto6";
+      
+    }
+
+    .contenedorgaleria1{
+        grid-area: foto1;
+
+    }
+    .contenedorgaleria2{
+        grid-area: foto2;
+    }
+    .contenedorgaleria3{
+        grid-area: foto3;
+    }
+    .contenedorgaleria4{
+        grid-area: foto4;
+    }
+    .contenedorgaleria5{
+        grid-area: foto5;
+    }
+    .contenedorgaleria6{
+        grid-area: foto6;
+    }
+
+    /*mobile index*/
+
+    .grillaindex{
+    
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "area1"
+                             "area2" 
+                             "area3"
+                             "area4"
+                             "area5"
+                             "area6";
+        justify-content: space-around;
+        align-content: space-between;
+                             
+        
+    
+    }
+
+    .contenedor1{
+        
+        grid-area: area1;
+        
+    }
+    .contenedor2{
+        grid-area: area2;
+    }
+    .contenedor3{
+        grid-area: area3;
+    }
+    .contenedor4{
+        grid-area: area4;
+    }
+    .contenedor5{
+        grid-area: area5;
+    }
+    .contenedor6{
+        grid-area: area6;
+    }
+
+    /*mobileactividades*/
+
+    .grillaact{
+
+       grid-template-columns: 100%;
+       grid-template-rows: 1fr 1fr 1fr ;
+       grid-template-areas: "foto1"
+                            "foto2"
+                            "foto3";   
+    }
+
+    .contenedoract1{
+        grid-area: foto1;
+
+    }
+    .contenedoract2{
+        grid-area: foto2;
+    }
+    .contenedoract3{
+        grid-area: foto3;
+    }
+
+    /*mobile eventos*/
+
+    .grillaeventos{
+
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: "foto1"
+                             "foto2";
+                             
+    }
+    .contenedoreventos1{
+        grid-area: foto1;
+    }
+    .contenedoreventos2{
+        grid-area: foto2;
+    }
+}
+
+
+
+
+
