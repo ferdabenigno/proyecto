@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,34 +36,79 @@
     </header>   
   
         <main>
-            <h2 class="animate__animated animate__bounceInRight">Quienes somos...</h2>
-            <p class="animate__animated animate__backInDown">Somos un club de ambiente familiar desde 2018, dedicados al desarrollo de actividades fisicas, entretenimiento y diversion para todas las edades. Brindando los mejores servicios y atención  para que tu estadia en nuestro complejo sea lo mejor posible</p>
-            <div class="grillaindex" >
-                    <div class="contenedor1">
-                    <img data-aos="flip-left" data-aos-duration="2000" src="img/cancha6.jpeg" alt="">
-                    
+
+            <section>
+
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/cancha6.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/cancha4.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/pileta1.jpg" class="d-block w-100" alt="...">
+                      </div>
                     </div>
-                    <div class="contenedor2">
-                    <img data-aos="flip-right" data-aos-duration="2000" src="img/cumpleaños1.jpeg" alt="">
-                    
-                    </div>    
-                    <div class="contenedor3">
-                    <img data-aos="flip-up" data-aos-duration="2000" src="img/cancha4.jpeg" alt="">
-                   
-                    </div>
-                    <div class="contenedor4">
-                    <img data-aos="flip-down" data-aos-duration="2000" src="img/cancha5.jpeg" alt="">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>     
+
+            </section>
+
+            <section>
+              <h2 class="animate__animated animate__bounceInRight">Quienes somos...</h2>
+              <p class="animate__animated animate__backInDown">Somos un club de ambiente familiar desde 2018, dedicados al desarrollo de actividades fisicas, entretenimiento y diversion para todas las edades. Brindando los mejores servicios y atención  para que tu estadia en nuestro complejo sea lo mejor posible</p>
+            </section>
+
+            <section>
+              <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Novedades</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Futbol</h6>
+                          <p class="card-text">A partir del 15 de marzo se abre la escuelita de futbol para los chicos de 6 a 10 años, ambos sexos.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>    
+                      </div>
 
                     </div>
-                    <div class="contenedor5">
-                    <img data-aos="flip-left" data-aos-duration="2000" src="img/pileta1.jpg" alt="">
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Novedades</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Natacion</h6>
+                          <p class="card-text">A partir del 15 de marzo abre la escuela de Natacion para chicos de 9 a 14 años</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+
                     </div>
- 
-                    <div class="contenedor6">
-                    <img data-aos="flip-right" data-aos-duration="2000" src="img/cancha32.jpg" alt="">
-                    </div>
+                </div>
+
+
+              </div>
                 
-            </div>   
+                
+
+            </section>
+            
+            <section>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.5818208227397!2d-58.364573684767954!3d-34.690502280437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3332839db7a8d%3A0xa46c762ba8a7cc08!2sComplejo%20Deportivo%20Don%20Bosco!5e0!3m2!1ses-419!2sar!4v1646266114960!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </section>
+            
         </main>
         <footer>
             
