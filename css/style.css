@@ -1,4 +1,12 @@
 /*colores*/
+* {
+  margin: 0%;
+  padding: 0%; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
 /*HEADER*/
 header {
   background-image: url("../img/header3.webp");
@@ -56,11 +64,15 @@ p {
   background-color: #065e06;
   font-style: italic; }
 
-.card {
+.card, .card-2 {
   margin-bottom: 50px;
-  height: 200px; }
-  .card .card-text {
+  height: 200px;
+  background-color: #5d5de4; }
+  .card .card-text, .card-2 .card-text {
     color: black; }
+
+.card-2 {
+  background-color: #42ac38; }
 
 iframe {
   width: 100%; }
@@ -70,7 +82,8 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6";
+  grid-template-areas: "foto1 foto2 foto3"
+ "foto4 foto5 foto6";
   align-content: space-around;
   justify-content: space-between;
   column-gap: 2%;
@@ -130,7 +143,8 @@ iframe {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "eventos1"  "eventos2";
+  grid-template-areas: "eventos1" 
+ "eventos2";
   align-content: space-around;
   justify-content: space-between;
   align-items: center;
@@ -174,14 +188,6 @@ footer div .imgredsocial {
 .piedepagina {
   text-align: center; }
 
-* {
-  margin: 0%;
-  padding: 0%; }
-
-img {
-  width: 100%;
-  height: 100%; }
-
 @media only screen and (max-width: 600px) {
   #grantitulo {
     font-size: 50px; }
@@ -194,7 +200,12 @@ img {
   .grillagaleria {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "foto1" "foto2" "foto3"    "foto4"    "foto5"    "foto6"; }
+    grid-template-areas: "foto1"
+ "foto2"
+ "foto3"   
+ "foto4"   
+ "foto5"   
+ "foto6"; }
   .contenedorgaleria1 {
     grid-area: foto1; }
   .contenedorgaleria2 {
@@ -217,7 +228,8 @@ img {
   .grillaeventos {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "foto1" "foto2"; }
+    grid-template-areas: "foto1"
+ "foto2"; }
   .contenedoreventos1 {
     grid-area: foto1; }
   .contenedoreventos2 {

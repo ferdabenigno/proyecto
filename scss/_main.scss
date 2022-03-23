@@ -37,25 +37,35 @@
   .card {
     margin-bottom: 50px;
     height: 200px;
+    background-color: rgb(93, 93, 228);
     .card-text {
       color: black; }
   }
   
+  .card-2{
+
+    @extend .card;
+    background-color: rgb(66, 172, 56);
+  
+  }
+
   iframe {
     width: 100%; }
   
   /* Main galeria*/
-  .grillagaleria {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+
+  @mixin grillagal ($display , $cantidadcolum , $cantidadrows , $aligncontent , $justifycontent , $alignitem , $justifyitem ) {
+
+    display: $display;
+    grid-template-columns:$cantidadcolum;
+    grid-template-rows: $cantidadrows;
     grid-template-areas: "foto1 foto2 foto3"
    "foto4 foto5 foto6";
-    align-content: space-around;
-    justify-content: space-between;
+    align-content: $aligncontent;
+    justify-content: $justifycontent;
     column-gap: 2%;
-    align-items: center;
-    justify-items: center; 
+    align-items: $alignitem;
+    justify-items: $justifyitem;
 
     .contenedorgaleria1 {
       height: 80%;
@@ -87,6 +97,13 @@
       width: 80%;
       grid-area: foto6; } 
   }
+    
+  
+  .grillagaleria {
+    @include grillagal(grid, 1fr 1fr 1fr , 1fr 1fr , space-around , space-between , center , center )
+  }
+
+    
   
   
   /*main contacto*/
