@@ -33,6 +33,9 @@ header {
           color: black;
           font-weight: 500; }
 
+header nav ul li a:hover {
+  color: white; }
+
 /*MAIN index*/
 main {
   background-color: black;
@@ -82,8 +85,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "foto1 foto2 foto3"
- "foto4 foto5 foto6";
+  grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6";
   align-content: space-around;
   justify-content: space-between;
   column-gap: 2%;
@@ -143,8 +145,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "eventos1" 
- "eventos2";
+  grid-template-areas: "eventos1"  "eventos2";
   align-content: space-around;
   justify-content: space-between;
   align-items: center;
@@ -162,11 +163,13 @@ iframe {
 .columnaeventos {
   display: flex;
   flex-direction: column;
-  background-color: #086808; }
+  background-color: #086808;
+  padding: 1rem; }
   .columnaeventos .descripcioneventos {
     list-style: square;
     font-size: 20px;
-    color: white; }
+    color: white;
+    list-style-position: inside; }
 
 /*FOOTER*/
 footer {
@@ -200,12 +203,7 @@ footer div .imgredsocial {
   .grillagaleria {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "foto1"
- "foto2"
- "foto3"   
- "foto4"   
- "foto5"   
- "foto6"; }
+    grid-template-areas: "foto1" "foto2" "foto3"    "foto4"    "foto5"    "foto6"; }
   .contenedorgaleria1 {
     grid-area: foto1; }
   .contenedorgaleria2 {
@@ -223,13 +221,12 @@ footer div .imgredsocial {
     height: 300px; }
   /*mobileactividades*/
   .tituloact {
-    font-size: 50px; }
+    font-size: 40px; }
   /*mobile eventos*/
   .grillaeventos {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "foto1"
- "foto2"; }
+    grid-template-areas: "foto1" "foto2"; }
   .contenedoreventos1 {
     grid-area: foto1; }
   .contenedoreventos2 {

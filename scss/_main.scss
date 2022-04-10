@@ -163,11 +163,13 @@
 .columnaeventos {
   display: flex;
   flex-direction: column;
-  background-color: #086808; 
+  background-color: #086808;
+  padding: 1rem; 
 
   .descripcioneventos {
     list-style: square;
     font-size: 20px;
-    color: white; }
+    color: white;
+    list-style-position: inside;  }
 }
 
